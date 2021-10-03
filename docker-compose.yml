@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  elm:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8000
+    container_name: elm_dev
+    init: true
